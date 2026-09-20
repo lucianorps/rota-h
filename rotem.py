@@ -53,7 +53,7 @@ def cartao(texto, tipo="neutro"):
     borda, fundo = _CORES.get(tipo, _CORES["neutro"])
     st.markdown(
         f"""
-        <div style='border:1px solid {borda}; background-color:{fundo};
+        <div style='border:1px solid {borda}; background-color:{fundo}; color:#1a1a1a;
         border-radius:8px; padding:0.7rem 1rem; margin:0.4rem 0; font-size:0.95rem;'>
         {_render_corpo(texto)}</div>
         """,
